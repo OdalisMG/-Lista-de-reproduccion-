@@ -1,0 +1,124 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Manjari:wght@100;400&display=swap');
+
+
+*{
+    background: url("https://images.unsplash.com/photo-1616712134411-6b6ae89bc3ba?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    animation: animation 100s linear infinite;
+
+}
+
+@keyframes animation {
+    100%{
+     background-position:0px -3000px;
+   }
+ }
+
+
+body{
+    display: grid;
+    grid-auto-rows: 1fr 12fr 1fr;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.ContainerPrincipal { 
+
+    background: #ffff;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    align-self: center;
+    margin: 0 auto;
+    background-color: #ffff;
+    padding: 40px 40px;
+    background-color: #ffff;
+    font-family: 'Comfortaa', sans-serif;
+    
+}
+
+.ContainerPrincipal .section{
+
+    background: #ffff;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    
+}
+
+header{
+    width: 100vw;
+    max-width: 100vw;
+    height: fit-content;
+    padding: 10px 0;
+    background-color: rgb(37, 37, 37);
+    z-index: 1; 
+}
+
+header .der, header .izq{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+}
+header h1{
+    background-color: #030513;
+    color: #fff;
+    width: 30%;
+    border-radius: 15px;
+    text-align: center;
+    padding: 5px 0;
+    margin-left: 15px !important;
+    font-size: 1rem;
+    font-family:'Comfortaa', sans-serif; 
+}
+
+button, input {
+    font-family: 'Manjari', sans-serif;
+    border-radius: 10px;
+    border: none;
+    background-color: #fff;
+    text-align: center;
+    height: 20px;
+    padding: 5px 20px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+#login {
+/*     margin-left: 200x; */
+    border-radius: 15px;
+    padding: 10px 15px;
+    text-align: center;
+    height: fit-content !important;
+    
+}
+
+footer{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 0;
+    background-color: antiquewhite;
+
+    h2, h3, p, a{
+        font-family: 'Manjari', sans-serif;
+        margin: 0 !important;
+    }
+    p{
+        color: #8f96b9
+    }
+}
+

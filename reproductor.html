@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title> <img src="logo/logo-removebg-preview.png" alt="">
+    </title>
+</head>
+<body> 
+    <header id="header">
+        <a href="./reproductor.html" style="align-self: center;">
+            <div class="izq" id="izquierda">
+                <h1> R Y T H M E </h1>
+            </div>
+        </a>
+        <div class="der" id="derecha">
+            <h2 id="userTitle">Usuario</h2>
+            <a id="logout" class="logout" href="#">
+                <i class="fa-solid fa-power-off"></i>&nbsp;<span>Log Out</span>
+            </a>
+        </div>
+    </header>
+    <main>
+        <section class="bibliotecaGeneral">
+            <div class="buscador-container">
+                <input id="input-buscador" class="buscador" type="text" placeholder="Busca tu cancion">
+                <i id="buscar" class="fa-solid fa-magnifying-glass"></i>
+            </div>
+    
+            <div class="biblio-container">
+                <h2 class="biblio-titulo" id="biblio-titulo">
+                    Biblioteca General
+                </h2>
+                <div class="biblio-lista-container">
+                    <ul class="lista-general" id="lista-general"> 
+                    </ul>
+                </div>
+            </div>
+        </section>
+    
+        <section class="reproductor">
+            <div class="musicPlayer-cover">
+                <div class="album-cover"></div>
+                <div class="music-info-container">
+                    <h3 class="cancion-titulo" id="cancion-titulo">I Ain’t Worried</h3>
+                    <div class="cancion-info">
+                        <div class="cancion-titulos">
+                            <p id="cancion-artista">One Republic</p>
+                            <p id="cancion-album">Top Gun Maveric</p>
+                        </div>
+                        <div class="cancion-duracion">
+                            <h3 id="cancion-duracion">00:00</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="musicPlayer-botones">
+                <audio id="audio" preload="metadata"></audio>
+                <div class="sonido">
+                    <i id="mute" class="fa-solid fa-volume-xmark fa-2x"></i>
+                </div>
+                <div class="botones-centro">
+                    <div id="prevSong" class="atras"><i class="fa-solid fa-backward fa-2x"></i></div>
+                    <div id="play" class="play"><i id="playIcon" class="fa-solid fa-circle-play fa-2x"></i></div>
+                    <div id="nextSong" class="siguiente"><i class="fa-solid fa-forward fa-2x"></i></div>
+                </div>
+                <div class="stop">
+                    <i id="stop" class="fa-solid fa-stop fa-2x"></i>
+                </div>
+            </div>
+        </section>
+        <section class="listas">
+            <div class="listas-botones">
+                <div>
+                    <button id="myPlaylistBtn" type="button">Mi PlayList</button>
+                </div>
+                <div>
+                    <button id="favoritosBtn" type="button">Favoritos</button>
+                </div>
+            </div>
+            <div class="biblio-container bc-2">
+                <h2 class="biblio-titulo" id="biblio-titulo">
+                    My Playlist
+                </h2>
+                <div class="biblio-lista-container">
+                    <ul class="lista-general-2" id="lista-general-2"> 
+                    </ul>
+                </div>
+            </div>
+            <div class="biblio-container bc-3">
+                <h2 class="biblio-titulo" id="biblio-titulo">
+                    Favoritos
+                </h2>
+                <div class="biblio-lista-container">
+                    <ul class="lista-general-3" id="lista-general-3"> 
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="idFooter">
+        <div>
+            <p> R H Y T M E <p>
+        </div>
+    </footer>
+    <script src="./main.js" defer></script>
+</div>
+</body>
+</html>
